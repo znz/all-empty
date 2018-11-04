@@ -1,0 +1,9 @@
+---
+version: '3'
+services:
+  empty:
+    image: nginx
+    volumes:
+    - "./conf.d:/etc/nginx/conf.d:ro"
+    ports:
+    - "80:80"
